@@ -9,11 +9,11 @@ v1.0: Initial commit of Preprocessing and Mappability files. There are slight di
 
 ## Terminology
 TSN = Transcription start nucleotide
-TSS = Transcription start site
-TID = Transcription initiation domain
+TSS = Transcription start site (clusters of TSNs)
+TID = Transcription initiation domain (clusters of TSSes)
 maxTSN = Max start nucleotide within a TSS
 maxTSS = Max start site within a TID
-MMRL = Minimum mappable RNA length for a TSN
+MMRL = Minimum mappable RNA length for a TSN (useful for avoiding mapping biases)
 
 ## Preprocessing
 1. Trim barcodes & perform sequence alignment (CoPRO_align.sh)
@@ -37,5 +37,5 @@ MMRL = Minimum mappable RNA length for a TSN
 - maxTSN_PauseClassMotifs.r: analysis of TF motifs around maxTSNs
 - maxTSN_Spacing.r: analysis of spacing between all maxTSNs (convergent, divergent, same-strand)
 
-## TID analyses
-- TID_LinearHeatmaps.ipynb: Generate linear row-collapsed (and raw) heatmaps of ChIP datasets around TIDs
+## Transcription initiation domains
+- TID_LinearHeatmaps.ipynb: Generate linear averaged (and raw) heatmaps of ChIP datasets around TIDs
